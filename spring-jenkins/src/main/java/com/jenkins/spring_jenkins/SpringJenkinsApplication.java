@@ -27,6 +27,11 @@ public class SpringJenkinsApplication {
 	{
 		return "OK";
 	}
+	@GetMapping("/check")
+	public String check()
+	{
+		return "PIPELINE CHECK DONE";
+	}
 	public static void main(String[] args) {
 		SpringApplication.run(SpringJenkinsApplication.class, args);
 	}
